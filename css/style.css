@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Inter:slnt@-10..0&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca&family=Lexend:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,700;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:wght@700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body button input {
+  font-family: "Space Mono", monospace;
+}
+
+body {
+  background-color: #141D2F;
+}
+
+.contianer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 730px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 144px;
+  margin-bottom: 36px;
+}
+header h1 {
+  font-family: Space Mono;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 38.51px;
+  text-align: left;
+  color: #fff;
+}
+header button {
+  width: 89px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0;
+  background-color: transparent;
+}
+header button p {
+  font-family: Space Mono;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 19.25px;
+  letter-spacing: 2.5px;
+  text-align: right;
+  color: #fff;
+}
+header button:hover {
+  cursor: pointer;
+  opacity: 60%;
+}
+
+.box-imput {
+  padding: 9.5px 10px 9.5px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1E2A47;
+  border-radius: 10px;
+}
+.box-imput:active {
+  cursor: pointer;
+}
+.box-imput:active .box-button p {
+  display: block;
+}
+.box-imput .box {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.box-imput .box button {
+  background-color: transparent;
+  border: 0;
+}
+.box-imput .box input {
+  width: 254px;
+  background-color: transparent;
+  border: 0;
+  font-family: Space Mono;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+  color: #fff;
+}
+.box-imput .box input:focus {
+  outline: none;
+}
+.box-imput .box placeholder {
+  font-family: Space Mono;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+  color: #fff;
+}
+.box-imput .box-button {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.box-imput .box-button p {
+  display: none;
+  font-family: Space Mono;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+  color: #F74646;
+}
+.box-imput .box-button button {
+  width: 106px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #0079FF;
+  border: 0;
+  border-radius: 5px;
+}
+.box-imput .box-button button:hover {
+  cursor: pointer;
+  background-color: #72b0f7;
+}
+
+.card {
+  padding: 48px;
+  padding-bottom: 18px;
+  background-color: #1E2A47;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.card .info {
+  width: 100%;
+  max-width: 694px;
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.card .info .card-info {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  justify-content: space-between;
+}
+.card .info .card-info .box-item h3 {
+  font-family: Space Mono;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 38.51px;
+  text-align: left;
+  color: white;
+  margin-bottom: 2px;
+}
+.card .info .card-info .box-item h4 {
+  font-family: Space Mono;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.7px;
+  text-align: left;
+  color: #0079FF;
+}
+.card .info .card-info p {
+  margin-top: 8px;
+  font-family: Space Mono;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22.22px;
+  text-align: right;
+  color: white;
+}
+.card .card-box {
+  transform: translateY(-30px);
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+}
+.card .card-box p {
+  font-family: Space Mono;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+  color: white;
+}
+.card .card-box .rapos {
+  background-color: #141D2F;
+  width: 100%;
+  max-width: 480px;
+  height: 85px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  padding-right: 73px;
+  margin-top: 32px;
+}
+.card .card-box .rapos article p {
+  font-family: Space Mono;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19.25px;
+  text-align: left;
+  color: #fff;
+}
+.card .card-box .rapos article h5 {
+  font-family: Space Mono;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 32.58px;
+  text-align: left;
+  color: white;
+}
+.card .card-box address {
+  margin-top: 37px;
+  width: 100%;
+  max-width: 429px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .card-box address div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 19px;
+}
+.card .card-box address div article {
+  display: flex;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  align-items: center;
+}
+.card .card-box address div article:hover a {
+  text-decoration: underline;
+}
+.card .card-box address div article a {
+  font-family: Space Mono;
+  font-size: 15p;
+  font-weight: 400;
+  line-height: 22.22px;
+  text-align: left;
+  color: #fff;
+  text-decoration: none;
+}
+.card .card-box address div .article {
+  opacity: 50%;
+}
+
+@media (max-width: 720px) {
+  .card .card-box {
+    transform: translateY(none);
+    margin-top: 44px;
+  }
+}
+@media (max-width: 600px) {
+  .box-imput:active {
+    cursor: pointer;
+  }
+  .box-imput:active .box-button p {
+    display: none;
+  }
+  .card .info .card-info {
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 4px;
+  }
+}
+@media (max-width: 470px) {
+  .box-imput {
+    padding-left: 10px;
+  }
+  .box-imput .box {
+    gap: 10px;
+  }
+  .box-imput .box input {
+    font-family: Space Mono;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25px;
+    width: 164px;
+  }
+  .card .card-box .rapos {
+    padding: 0;
+  }
+  .card address {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 19px;
+  }
+}
+@media (max-width: 430px) {
+  .card .info img {
+    width: 70px;
+    height: 70px;
+  }
+  .card .info .card-info .box-item h3 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23.7px;
+  }
+  .card .info .card-info p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19.25px;
+  }
+  .card .card-box p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+}/*# sourceMappingURL=style.css.map */
